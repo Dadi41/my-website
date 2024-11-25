@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web page</title>
+</head>
+<body>
+    <h1>Welcome to My Interactive Page</h1>
+    <p id="message">Click the button to change this text.</p>
+    <button onclick="changeText()">Click Me</button>
+    <br>
+    <button onclick="retourText()">Retour</button>
+<script>
+    function changeText() {
+        document.getElementById("message").innerText = "You clicked the button!";
+    }
+
+    function retourText() {
+        document.getElementById("message").innerText = "Click the button to change this text.";
+    }
+</script>
+
+</body>
+</html>
